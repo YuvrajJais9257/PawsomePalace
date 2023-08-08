@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FEDCD2;
+}
+
+.card {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #FBE7C6;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 10px;
+  margin-top: 33px;
+  width: 30px;
+  height: 30px;
+}
+
+.big-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.form-signin {
+  max-width: 400px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form-signin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.form-signin button {
+  border-radius: 5px;
+  font-family: inherit;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  background-color: #FF9F4D; 
+  cursor: pointer;
+}
+
+.form-signin button:hover {
+  background-color: #FF5E78;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-right: 20px;
+  width: 60%;
+}
+
+.right{
+  width: 40%;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style-image: url("../assets/images/icon-success.svg");
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.form-control{
+  padding: 10px 20px;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid #000000;
+}
+
+.card-2{
+  background-color: #FEDCD2;
+  width: 400px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.card-2 h1{
+  font-size: 40px;
+}
+
+.icon-card-2{
+  width: 50px;
+}
+
+.card-2 button{
+  width: 100%;
+}
+
+@media (max-width: 768px){
+  .card{
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .card h1{
+    font-size: 30px;
+  }
+  .right{
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+    padding: 20px;
+  }
+  form{
+    width: 90%;
+  }
+  .card-2{
+    min-height: 100vh;
+  }
+}
